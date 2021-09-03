@@ -48,3 +48,26 @@ $( function() {
     return date;
   }
 } );
+
+
+
+/*          Light-Dark themes              */
+
+
+
+
+
+var myImage = document.querySelector('img');
+let page = document.querySelector('.page');
+let themeButton = document.querySelector('.theme-button');
+
+themeButton.onclick = function() {
+  var mySrc = myImage.getAttribute('src');
+    if(mySrc === 'img/1.jpg') {
+      myImage.setAttribute ('src','img/2.jpg');
+    } else {
+      myImage.setAttribute ('src','img/1.jpg');
+    }
+  page.classList.toggle('light-theme');
+  page.classList.toggle('dark-theme');
+};

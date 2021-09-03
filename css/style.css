@@ -10,39 +10,41 @@
     padding: 0;
 }
 
-/*         GENERAL        */
+/*         GENERAL        */  /*      Light-theme      */
 
-body {
-  background-color: black;
+.light-theme {
+  background-color: white;
 }
+
 
 /*    HEADER     */
 
-.header {
+
+.light-theme .header {
   border: solid 2px;
-  border-color: white;
+  border-color: black;
   width: 100%;
   position: relative;
   overflow: hidden;
   height: 100px;
   margin: 0;
 }
-.header__menu nav ul {
+.light-theme .header__menu nav ul {
   position: fixed;
 }
-nav ul li {
+.light-theme nav ul li {
   display: inline-block;
   cursor: pointer;
 }
-#logo {
+.light-theme #logo {
   border: solid 1px;
-  border-color: white;
+  border-color: black;
   position: absolute;
   left: 0;
 }
-#dark {
+.light-theme #light {
   border: solid 1px;
-  border-color: white;
+  border-color: black;
   position: absolute;
   right: 0;
   margin-top: -15px;
@@ -50,36 +52,36 @@ nav ul li {
 
 /*     MENU     */
 
-.menu li {
+.light-theme .menu li {
   justify-content: center;
   margin-top: -5px;
   margin-left: 0px;
   margin-right: 100px;
   font-size: 200%;
 }
-#first {
+.light-theme #first {
   color: #fdec1a;
 }
-#second {
+.light-theme #second {
   color: #8e44ad;
 }
-#third {
+.light-theme #third {
   color: #2ecc71;
 }
-#fourth{
+.light-theme #fourth{
   color: #5b94cc;
 }
-.Ximg,
-.Simg,
-.Limg,
-.Nimg {
+.light-theme .Ximg,
+.light-theme .Simg,
+.light-theme .Limg,
+.light-theme .Nimg {
   height: 50%;
   width: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.box {
+.light-theme .box {
   position: relative;
   display: inline;
   width: 300px;
@@ -89,7 +91,7 @@ nav ul li {
   float: left;
   margin: 17px;
 }
-p {
+.light-theme p {
   display: inline-block;
   position: absolute;
   margin-left: 10%;
@@ -97,9 +99,9 @@ p {
   bottom: 0%;
   width: 80%;
   height: 45%;
-  color: white;
+  color: black;
 }
-.block-cover {
+.light-theme .block-cover {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -107,47 +109,47 @@ p {
   width: 100%;
   box-sizing: border-box;
   text-align: justify;
-  border: 5px solid white;
+  border: 5px solid black;
 }
-.block-cover:after {
+.light-theme .block-cover:after {
   position: relative;
   display: inline-block;
   width: 100%;
 	height: 10px;
 }
-#all {
-  color: white;
+.light-theme #all {
+  color: black;
   opacity: 0;
   font-size: 3em;
 }
-.box.Xakep,
-.Ximg,
-#xak {
+.light-theme .box.Xakep,
+.light-theme .Ximg,
+.light-theme #xak {
   border: 3px solid #fdec1a;
 }
-.box.Securitylab,
-.Simg,
-#sec {
+.light-theme .box.Securitylab,
+.light-theme .Simg,
+.light-theme #sec {
   border: 3px solid #8e44ad;
 }
-.box.Linuxcan,
-.Limg,
-#lin {
+.light-theme .box.Linuxcan,
+.light-theme .Limg,
+.light-theme #lin {
   border: 3px solid #2ecc71;
 }
-.Next,
-.Nimg,
-#nex {
+.light-theme .Next,
+.light-theme .Nimg,
+.light-theme #nex {
   border: 3px solid #5b94cc;
 }
 
-a,
-li{
+.light-theme a,
+.light-theme li{
   text-decoration: none; /* убирает подчеркивания в ссылках*/
   display: inline-block; /* чтобы ссылки были формата строчно-блочные */
 }
 
-.hide {
+.light-theme .hide {
   display: none;
   opacity: 1;
   animation-name: a1;
@@ -166,15 +168,191 @@ li{
   }
 }
 
-label {
+.light-theme label {
+  color: black;
+}
+.light-theme .search {
+  float: right;
+  text-align: right;
+  border: solid 3px;
+  border-color: black;
+  margin-top: 50px;
+}
+
+/* BUTTON */
+
+
+
+
+
+
+
+
+/* ----------------------------------- Dark-theme ------------------------------------- */
+
+.dark-theme {
+  background-color: black;
+}
+
+
+/*    HEADER     */
+
+
+.dark-theme .header {
+  border: solid 2px;
+  border-color: white;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  margin: 0;
+}
+.dark-theme .header__menu nav ul {
+  position: fixed;
+}
+.dark-theme nav ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+.dark-theme #logo {
+  border: solid 1px;
+  border-color: white;
+  position: absolute;
+  left: 0;
+}
+.dark-theme #light {
+  border: solid 1px;
+  border-color: white;
+  position: absolute;
+  right: 0;
+  margin-top: -15px;
+}
+
+/*     MENU     */
+
+.dark-theme .menu li {
+  justify-content: center;
+  margin-top: -5px;
+  margin-left: 0px;
+  margin-right: 100px;
+  font-size: 200%;
+}
+.dark-theme #first {
+  color: #fdec1a;
+}
+.dark-theme #second {
+  color: #8e44ad;
+}
+.dark-theme #third {
+  color: #2ecc71;
+}
+.dark-theme #fourth{
+  color: #5b94cc;
+}
+.dark-theme .Ximg,
+.dark-theme .Simg,
+.dark-theme .Limg,
+.dark-theme .Nimg {
+  height: 50%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.dark-theme .box {
+  position: relative;
+  display: inline;
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  float: left;
+  margin: 17px;
+}
+.dark-theme p {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  bottom: 0%;
+  width: 80%;
+  height: 45%;
   color: white;
 }
-.search {
+.dark-theme .block-cover {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: auto;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: justify;
+  border: 5px solid white;
+}
+.dark-theme .block-cover:after {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+	height: 10px;
+}
+.dark-theme #all {
+  color: white;
+  opacity: 0;
+  font-size: 3em;
+}
+.dark-theme .box.Xakep,
+.dark-theme .Ximg,
+.dark-theme #xak {
+  border: 3px solid #fdec1a;
+}
+.dark-theme .box.Securitylab,
+.dark-theme .Simg,
+.dark-theme #sec {
+  border: 3px solid #8e44ad;
+}
+.dark-theme .box.Linuxcan,
+.dark-theme .Limg,
+.dark-theme #lin {
+  border: 3px solid #2ecc71;
+}
+.dark-theme .Next,
+.dark-theme .Nimg,
+.dark-theme #nex {
+  border: 3px solid #5b94cc;
+}
+
+.dark-theme a,
+li{
+  text-decoration: none; /* убирает подчеркивания в ссылках*/
+  display: inline-block; /* чтобы ссылки были формата строчно-блочные */
+}
+
+.dark-theme .hide {
+  display: none;
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1{
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+.dark-theme label {
+  color: white;
+}
+.dark-theme .search {
   float: right;
   text-align: right;
   border: solid 3px;
   border-color: white;
   margin-top: 50px;
 }
-
-/* BUTTON */
