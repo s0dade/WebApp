@@ -1,0 +1,180 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*         GENERAL        */
+
+body {
+  background-color: black;
+}
+
+/*    HEADER     */
+
+.header {
+  border: solid 2px;
+  border-color: white;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  margin: 0;
+}
+.header__menu nav ul {
+  position: fixed;
+}
+nav ul li {
+  display: inline-block;
+  cursor: pointer;
+}
+#logo {
+  border: solid 1px;
+  border-color: white;
+  position: absolute;
+  left: 0;
+}
+#dark {
+  border: solid 1px;
+  border-color: white;
+  position: absolute;
+  right: 0;
+  margin-top: -15px;
+}
+
+/*     MENU     */
+
+.menu li {
+  justify-content: center;
+  margin-top: -5px;
+  margin-left: 0px;
+  margin-right: 100px;
+  font-size: 200%;
+}
+#first {
+  color: #fdec1a;
+}
+#second {
+  color: #8e44ad;
+}
+#third {
+  color: #2ecc71;
+}
+#fourth{
+  color: #5b94cc;
+}
+.Ximg,
+.Simg,
+.Limg,
+.Nimg {
+  height: 50%;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+  position: relative;
+  display: inline;
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  float: left;
+  margin: 17px;
+}
+p {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10%;
+  margin-right: 10%;
+  bottom: 0%;
+  width: 80%;
+  height: 45%;
+  color: white;
+}
+.block-cover {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: auto;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: justify;
+  border: 5px solid white;
+}
+.block-cover:after {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+	height: 10px;
+}
+#all {
+  color: white;
+  opacity: 0;
+  font-size: 3em;
+}
+.box.Xakep,
+.Ximg,
+#xak {
+  border: 3px solid #fdec1a;
+}
+.box.Securitylab,
+.Simg,
+#sec {
+  border: 3px solid #8e44ad;
+}
+.box.Linuxcan,
+.Limg,
+#lin {
+  border: 3px solid #2ecc71;
+}
+.Next,
+.Nimg,
+#nex {
+  border: 3px solid #5b94cc;
+}
+
+a,
+li{
+  text-decoration: none; /* убирает подчеркивания в ссылках*/
+  display: inline-block; /* чтобы ссылки были формата строчно-блочные */
+}
+
+.hide {
+  display: none;
+  opacity: 1;
+  animation-name: a1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes a1{
+  to {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+}
+
+label {
+  color: white;
+}
+.search {
+  float: right;
+  text-align: right;
+  border: solid 3px;
+  border-color: white;
+  margin-top: 50px;
+}
+
+/* BUTTON */

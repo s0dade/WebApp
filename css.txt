@@ -1,0 +1,91 @@
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*         GENERAL        */
+
+body{
+  background-color: #000000;
+}
+
+/*    HEADER     */
+
+.header {
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  margin: 0;
+}
+.header a img{
+  margin-top: -15px;
+  position: fixed;
+  float: left;
+}
+.header__menu nav ul {
+  position: absolute;
+  left: 15%;
+}
+
+/*     MENU     */
+
+.menu a {
+  justify-content: center;
+  margin: 10px;
+  margin-right: 100px;
+  color: #ff0000;
+  font-size: 200%;
+}
+
+.container {
+  max-width: border-box;
+  margin: 50px auto;
+  display: inline-block;
+}
+.box {
+  position: relative;
+  box-sizing: 100px;
+  display: inlie-block;
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: 6px 7px 28px 0 rgba(16, 16, 16, 0.7);
+  min-height: 140px;
+  min-width: 100px;
+  padding: 100px 100px;
+  margin: 15px;
+  border-width: 3px
+  float: left;
+}
+.block-cover {
+
+}
+.block-cover:after{
+
+}
+.block-cover>div{
+
+}
+.box.xakep {
+  border: 3px solid #e74c3c;
+}
+.box.Securitylab {
+  border: 3px solid #8e44ad;
+}
+.box.Linuxcan {
+  border: 3px solid #2ecc71;
+}
+.box.Feedback {
+  border: 3px solid #2980b9;
+}
+
+a{
+  text-decoration: none; /* убирает подчеркивания в ссылках*/
+  display: inline-block; /* чтобы ссылки были формата строчно-блочные */
+}
